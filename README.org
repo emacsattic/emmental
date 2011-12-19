@@ -1,0 +1,36 @@
+* Why on earth would you like to take snapshots with Emacs?
+Originally I made an experimental webcam assembly with four webcams
+that I wanted to take panorama shots with. For some reason it was more
+convenient to do the interface in Emacs.
+
+Then I figured it would be interesting to have a visual remember mode
+for org, org-emmental.
+
+Then it also occured to me that it would be nice to have an Emacs
+interface to my Canon EOS system camera.
+
+So all of that would be nice but not much is in place yet.
+
+* dependencies
+emmental.el uses fswebcam to talk to the camera. It used to be
+finnicky to get working, but as of Fedora 16 I just installed it from
+the repository and it worked out of the box!
+* usage
+m-x emmental-capture-and-preview
+
+* original use 
+
+;; The original use case for this library was the code snippet below.
+;; it takes a bunch of snaps from several different webcams and
+;; inserts them in a buffer.
+
+;; (progn
+;;   (pop-to-buffer "emmental")
+;;   (erase-buffer)
+;;   (clear-image-cache)
+;;   (emmental-capture-and-preview "0" "0")
+;;   (emmental-capture-and-preview "2" "1")
+;;   (emmental-capture-and-preview "1" "2")
+;;   )
+
+
