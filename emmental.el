@@ -1,5 +1,7 @@
 ;; emmental.el -- take snapshots with Emacs
 
+;; License: GPL-3+
+
 ;;; Commentary:
 ;; 
 
